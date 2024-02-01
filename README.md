@@ -15,6 +15,4 @@ To use the UITween library in your project, simply clone or download the reposit
 Contributing
 Contributions are welcome! Whether it's adding new effects, improving existing ones, or reporting issues, your input helps make UITween better for everyone.
 
-License
-UITween is released under the MIT License. See the LICENSE file for more details.
 

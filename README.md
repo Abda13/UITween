@@ -1,5 +1,6 @@
 UITween Library for Unity
 The UITween library is a lightweight, flexible solution designed to enhance the visual appeal of your Unity UI elements through smooth, customizable animations. Built for Unity developers seeking to add dynamic interactions and transitions to their UI components, this library focuses on simplicity and performance.
+See how it feels here: https://abanoori.itch.io/uitween
 
 Features
 Versatile Tweening Effects: Includes a variety of tweening effects such as translation, scaling, rotation, bouncing, and more, allowing for complex animations with minimal effort.
@@ -16,3 +17,4 @@ Contributions are welcome! Whether it's adding new effects, improving existing o
 
 License
 UITween is released under the MIT License. See the LICENSE file for more details.
+

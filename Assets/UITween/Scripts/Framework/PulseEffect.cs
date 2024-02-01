@@ -29,7 +29,7 @@ namespace UITween.Internal
         {
             if (timeElapsed < duration)
             {
-                float progress = (Mathf.Sin(pulseTimeElapsed / pulseDuration * 2* speed * Mathf.PI) + 1) / 2;
+                float progress = (Mathf.Sin(pulseTimeElapsed / pulseDuration * 2 * speed * Mathf.PI) + 1) / 2;
                 Vector3 currentScale = Vector3.LerpUnclamped(initialScale, targetScale, progress);
 
                 transform.localScale = currentScale;

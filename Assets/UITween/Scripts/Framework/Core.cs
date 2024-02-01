@@ -9,6 +9,19 @@ namespace UITween
 {
     public static class Core 
     {
+        static TweenManager TweenManager
+        {
+            get
+            {
+                if (TweenManager.instance == null)
+                {
+                    GameObject gameObject = new GameObject("TweenManager");
+                    gameObject.AddComponent<TweenManager>();
+                }
+                return TweenManager.instance;
+            }
+        }
+
         #region Translation
         public static void LocalMove(this RectTransform rectTransform,Vector3 targetPosition, float duration)
         {
@@ -69,17 +82,16 @@ namespace UITween
 
         #endregion
 
+        #region Effects
         public static void Scale(this RectTransform rectTransform, Vector3 targetPosition, float duration)
         {
             TweenManager.Scale(rectTransform, targetPosition, duration);
         }    
         
-        
         public static void Shake(this RectTransform rectTransform, float duration, float intensity)
         {
             TweenManager.Shake(rectTransform,duration,intensity);
         }
-
 
         public static void Pop(this RectTransform rectTransform, Vector3 targetScale, float duration)
         {
@@ -103,19 +115,6 @@ namespace UITween
         {
             TweenManager.Spring(rectTransform, targetPosition, duration, springCurve);
         }
-
-        static TweenManager TweenManager
-        {
-            get
-            {
-                if (TweenManager.instance == null)
-                {
-                    GameObject gameObject = new GameObject("TweenManager");
-                    gameObject.AddComponent<TweenManager>();
-                }
-                return TweenManager.instance;
-            }
-        }
-
+        #endregion
     }
 }

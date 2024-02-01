@@ -15,7 +15,6 @@ public class UITweenExamples : MonoBehaviour
         MoveUI.localPosition = new Vector3(-266, 0f, 0f);
         MoveUI.LocalMove(new Vector3(266, 0f, 0f), 1f);
     }
-
     public void SMoveUIPress()
     {
         resetUI();

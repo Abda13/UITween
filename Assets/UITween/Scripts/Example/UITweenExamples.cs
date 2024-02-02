@@ -56,7 +56,7 @@ public class UITweenExamples : MonoBehaviour
     public void PulsePress()
     {
         resetUI();
-        MoveUI.Pulse(new Vector3(1.2f, 1.2f, 1.2f), 0.4f, 3f);
+        MoveUI.Pulse(new Vector3(1.2f, 1.2f, 1.2f), .4f, 3f);
     }  
     public void SpringPress()
     {

@@ -16,6 +16,7 @@ namespace UITween
                 if (TweenManager.instance == null)
                 {
                     GameObject gameObject = new GameObject("TweenManager");
+                    gameObject.hideFlags = HideFlags.HideAndDontSave;
                     gameObject.AddComponent<TweenManager>();
                 }
                 return TweenManager.instance;
